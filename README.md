@@ -11,7 +11,7 @@
 
 ## 配置文件
 
-    \MongoAnalysis\public\javascripts\mongo\config\mongo.config.js
+    \MongoAnalysis\src\mongo\config\mongo.config.js
 
 ## 代码结构
 
