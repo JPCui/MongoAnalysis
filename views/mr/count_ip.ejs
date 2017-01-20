@@ -1,0 +1,35 @@
+<% layout("layout.ejs") -%>
+
+<style>
+    * {
+        list-style-type: none;
+    }
+    div.box {
+        height: 500px;
+        overflow-y: scroll;
+    }
+    ul {
+        display: table;
+    }
+    ul li {
+        display: table-row;
+        border-bottom: 1px solid silver;
+    }
+    ul li c {
+        display: table-cell;
+        padding: 10px 15px;
+    }
+</style>
+
+<h1>IP统计</h1>
+<div class="box">
+    <ul>
+        <% if (typeof(datas) !== 'undefined' && datas instanceof Array) { %>
+        <% datas.forEach(function(data){ %>
+        <li><c><%= data._id %></c><c><%= data.value %></c></li>
+        <% }) %>
+        <% } %>
+    </ul>
+</div>
+<script>
+</script>
